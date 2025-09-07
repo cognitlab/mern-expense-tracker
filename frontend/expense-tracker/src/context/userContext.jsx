@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+ import React, { createContext, useState } from "react";
 
 export const UserContext = createContext();
 
@@ -9,7 +9,7 @@ const UserProvider = ({ children }) => {
     const updateUser = (userData) => {
         setUser(userData);
     };
-
+    
     //Function to clear user data (e.g., on logout)
     const clearUser = () => {
         setUser(null);
@@ -25,7 +25,7 @@ const UserProvider = ({ children }) => {
         >
         {children}
         </UserContext.Provider>
-    );
+    )
 }
 
 export default UserProvider;
