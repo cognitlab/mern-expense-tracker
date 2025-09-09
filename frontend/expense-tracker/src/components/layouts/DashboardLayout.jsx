@@ -6,7 +6,7 @@ import SideMenu from "./SideMenu";
 
 const DashboardLayout = ({ children, activeMenu }) => {
   const { user } = useContext(UserContext);
-  console.log("User context:", user);
+  // console.log("User context:", user);  
 
   return (
       <div className=""> 
