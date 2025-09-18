@@ -15,7 +15,7 @@ export const getInitials = (name) => {
   return intitials.toUpperCase();
 };
 
-export const addThousandsSeperator = (num) => {
+export const addThousandsSeparator = (num) => {
   if (num == null || isNaN(num)) return "";
 
   const [integerPart, fractionalPart] = num.toString().split(".");
