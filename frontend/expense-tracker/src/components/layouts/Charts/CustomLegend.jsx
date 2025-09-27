@@ -18,4 +18,4 @@ const CustomLegend = ({payload}) => {
   )
 }
 
-export default CustomLegend
+export default CustomLegend;
