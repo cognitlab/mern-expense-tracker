@@ -10,7 +10,6 @@ import {
     ResponsiveContainer,
     Cell,
 } from "recharts";
-import CustomToolTip from './CustomToolTip';
 
 const CustomBarChart = ({data}) => {
 
@@ -40,7 +39,7 @@ const CustomBarChart = ({data}) => {
                 <XAxis dataKey="month" tick={{ fontSize: 12, fill:"#555" }} stroke='none'/>
                 <YAxis tick={{ fontSize: 12, fill:"#555" }} stroke='none'/>
 
-                <Tooltip content={CustomToolTip}/>
+                <Tooltip content={<CustomToolTip />}/>
 
                 <Bar
                     dataKey="amount"

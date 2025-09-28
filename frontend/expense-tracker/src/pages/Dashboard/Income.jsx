@@ -7,8 +7,12 @@ import Model from '../../components/layouts/Model';
 import AddIncomeForm from '../../components/layouts/Income/AddIncomeForm';
 import toast from 'react-hot-toast';
 import Incomelist from '../../components/layouts/Income/Incomelist';
+import DeleteAlert from '../../components/DeleteAlert';
+import { useUserAuth } from '../../hooks/useUserAuth';
 
 const Income = () => {
+
+  useUserAuth();
 
   const [incomeData, setIncomeData] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -77,7 +81,20 @@ const Income = () => {
   };
 
   //Delete Income
-  const deleteIncome = async (id) => {};
+  const deleteIncome = async (id) => {
+    try {
+      await axiosInstance.delete(API_PATHS.INCOME.DELETE_INCOME(id));
+
+      setOpenDeleteAlert({ show: false, data:null});
+      toast.success("Income Details deleted successfully")
+      fetchIncomeDetails();
+    } catch (error) {
+      console.error(
+        "Error deleting Income:",
+        error.response?.data?.message || error.message
+      );
+    }
+  };
 
   //handle download income details
   const handleDownloadIncomeDetails = async () => {};
@@ -116,6 +133,16 @@ const Income = () => {
         <AddIncomeForm onAddIncome={handleAddIncome}/>
         </Model>
 
+        <Model
+          isOpen={openDeleteAlert.show}
+          onClose={() => setOpenDeleteAlert({ show:false, data:null})}
+          title="Delete Income"
+        >
+          <DeleteAlert
+            content="Are you sure you want to delete this income detail?"
+            onDelete={() => deleteIncome(openDeleteAlert.data)}
+          />
+        </Model>
       </div>
     </DashboardLayout>
   );
