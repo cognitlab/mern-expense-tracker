@@ -74,6 +74,9 @@ Your app should now be running at http://localhost:3000
 ## 📊 Screenshots
 Visualize income and expenses in a clean dashboard.
 
+<img width="1364" height="654" alt="image" src="https://github.com/user-attachments/assets/b3b37414-c489-4080-9190-c92d4e61762f" />
+<img width="1366" height="657" alt="image" src="https://github.com/user-attachments/assets/63123f95-2c8e-44f4-993a-afae92ea5302" />
+
 Beautiful bar and pie charts with monthly aggregation.
 
 ## 📚 Usage
