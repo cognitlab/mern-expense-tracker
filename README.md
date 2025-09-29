@@ -73,6 +73,10 @@ Your app should now be running at http://localhost:3000
 
 ## 📊 Screenshots
 
+<img width="1357" height="648" alt="image" src="https://github.com/user-attachments/assets/2480a520-79bd-4ba2-86c3-13dd9a2f181a" />
+
+- Beautiful Login and Register UI.
+
 <img width="1364" height="654" alt="image" src="https://github.com/user-attachments/assets/b3b37414-c489-4080-9190-c92d4e61762f" />
 
 - Visualize income and expenses in a clean dashboard.
