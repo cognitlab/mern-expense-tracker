@@ -31,7 +31,21 @@
 
 ## 📥 Installation (Step-by-Step)
 
-### 1️⃣ Clone the repository
+### 2️⃣ Install dependencies
+
+#### Backend
 ```bash
-git clone https://github.com/cognitlab/mern-expense-tracker.git
-cd mern-expense-tracker
+cd server
+npm install
+
+cd ../client
+npm install
+
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+PORT=5000
+
+cd server
+npm run dev
+```
+
