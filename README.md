@@ -74,15 +74,22 @@ Your app should now be running at http://localhost:3000
 ## 📊 Screenshots
 
 <img width="1364" height="654" alt="image" src="https://github.com/user-attachments/assets/b3b37414-c489-4080-9190-c92d4e61762f" />
+
 - Visualize income and expenses in a clean dashboard.
 <img width="1366" height="657" alt="image" src="https://github.com/user-attachments/assets/63123f95-2c8e-44f4-993a-afae92ea5302" />
+
 - Beautiful bar and pie charts with monthly aggregation.
 <img width="1352" height="632" alt="image" src="https://github.com/user-attachments/assets/c062f0b8-d2ec-4646-86bb-c4e228915e5c" />
+
 - Add Income with EmojiPopup Picker.
 <img width="1361" height="649" alt="image" src="https://github.com/user-attachments/assets/e54c2d14-37cc-48a6-91c8-8170261123e8" />
+
 - Expense with same functionality and emoji picker to add expense.
 - Here used Line Chart.
 
+<img width="1174" height="409" alt="image" src="https://github.com/user-attachments/assets/9aea722e-9393-44b1-bef6-058cbce4dce6" />
+
+- Download Income & Expense in Excel Format.
 
 ## 📚 Usage
 - Register a new user
