@@ -29,13 +29,14 @@ export const addThousandsSeparator = (num) => {
 };
 
 export const prepareExpenseBarChartData = (data = []) => {
-  const chartData = data.map((item) => ({
-    category: item?.category,
-    amount: item?.amount,
-  }));
-
-  return chartData;
+  const grouped = data.reduce((acc, t) => {
+    const month = new Date(t.date).toLocaleString('default', { month: 'short' });
+    acc[month] = (acc[month] || 0) + Number(t.amount || 0);
+    return acc;
+  }, {});
+  return Object.entries(grouped).map(([month, amount]) => ({ month, amount }));
 };
+
 
 export const prepareIncomeBarChartData = (data = []) => {
   const sortedData = [...data].sort((a, b) => new Date(a.date) - new Date(b.date));
