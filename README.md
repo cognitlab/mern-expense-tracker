@@ -34,18 +34,24 @@
 ### 2️⃣ Install dependencies
 
 #### Backend
-```bash
+```
 cd server
 npm install
-
+```
+#### Frontend
+```
 cd ../client
 npm install
-
+```
+### 2️⃣ Setup Env Variables
+Create a .env file in server/ with:
+```
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 PORT=5000
+```
 
 cd server
 npm run dev
-```
+
 
