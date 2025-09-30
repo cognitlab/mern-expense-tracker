@@ -1,5 +1,9 @@
 # 🤑 MERN Expense Tracker
 
+<img width="1335" height="153" alt="image" src="https://github.com/user-attachments/assets/e8d2d465-aae1-4ecb-b569-a14d6b71cefb" />
+
+
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT) 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#)
 [![GitHub stars](https://img.shields.io/github/stars/cognitlab/mern-expense-tracker?style=social)](https://github.com/cognitlab/mern-expense-tracker/stargazers)
